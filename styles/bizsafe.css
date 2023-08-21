@@ -42,6 +42,15 @@
         width: 19%;
     }
 }
+@media only screen and (min-width: 1440px) {
+    .bizsafe-logo{
+        left: 28%;
+        top: 4%;
+    }  
+    .bizsafe-logo-image{
+        width: 18%;
+    } 
+}
 @media only screen and (min-width: 1629px) {
     .bizsafe-logo{
         left: 30%;
