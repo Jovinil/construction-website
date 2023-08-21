@@ -403,6 +403,14 @@ body{
     .content{
         height: 1100px;
     }
+    .bottom-services-text-1{
+        font-size: 2rem;
+        padding-left: 3%;
+    }
+    .bottom-services-text-2{
+        font-size: 2rem;
+        padding-left: 20%;
+    }
 }
 @media only screen and (min-width: 1629px) {
     body{

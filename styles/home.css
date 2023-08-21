@@ -303,7 +303,12 @@ body{
     }
     .anchor-tags a{
         font-size: 1.7rem;
-    }   
+    }  
+    .text-box{
+        top: 400px;
+        width: 48%;
+        height: 120px;
+    } 
 }
 @media only screen and (min-width: 1629px) {
     body{
