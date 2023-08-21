@@ -7,13 +7,13 @@
     --navbar-color:#2c353d;
     
 }
+
 *{
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
     transition: .2s;
-    text-transform: capitalize;
     transition:all .2s linear;
     text-decoration: none;
     font-family: 'Noto Sans Mono', monospace;
@@ -28,232 +28,478 @@ html{
     scroll-padding-top: 6rem;
 }
 body{
-    height: 400px;
-    position: relative;
-    min-height: 100%;
-    
+    background-color: var(--heading-color);
+    height: 414x;
+    padding: 0;
+    margin: 0;
 }
 .header{
-    position: absolute;
-    background-color: var(--navbar-color);
-    height: 150px;
+    background-color: var(--heading-color);
+    z-index: 2;
+}
+.navbar{
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.logo-box{
+    border-radius: 100px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.logo{
+    border-radius: 10px;
+    width: 40%;
+}
+.anchor-tags{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-items: space-between;
-    justify-content: center;
-    z-index: 1;
 }
-
-.header .logo img{
-    margin-left: 65px;
-    margin-right: 700px;
-    display: flex;
-    height: 100px;
-    width: 120px;
-    border-radius: 35px;
-}
-
-
-.navbuttons{
-    justify-content: center;
-    align-items: center;
-    margin-right: 60px;
-}
-.nav a{
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 1rem;
+.anchor-tags a{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.0rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 10px;
+}
+/*start editting here*/
+.content{
     position: relative;
+    height: 100%;
+    width: 100%;
+   
 }
-.nav a:hover{
-    color: var(--primar-color);
+.background-image{
+    object-fit: cover;
+    width: 100%;
+    height: 800px;
 }
-.nav a::after{
-    content: "";
-    background-color: var(--primar-color);
-    width: 0;
-    transition: 1s;
-    height: 3px;
+.left-section{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 40px;
+    left: 6%;
+    height: 300px;
+    width: 360px;
+
 }
-.nav a:hover::after{
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+.grid-upper-section{
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .4fr 2fr;
+    align-items: center;
+}
+.grid-middle-section{
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .4fr 2fr;
+    align-items: center;
+}
+.grid-lower-section{
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .4fr 2fr;
+    align-items: center;
+}
+.icon-box{
+    height: 100%;
     width: 100%;
 }
-
-.navbar.active{
-    right: 0;
-}
-.container{
-        background-image: url("contact-background2.jpeg");
-        object-fit: contain;
-        display: flex;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform: translate(-45%, -10%);
-        top: 220px;
-        left: 45%;
-        z-index: 0;
-}
-.contact-us{
-    height: 250px;
-    width: 600px;
-    
-    display: grid;
-    top: 30px;
-    position: absolute;
-    left: 35%;  
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-.heading{
-    align-items: center;
-    margin-left: 250px;
-    width: 160px;
-    height: 50px;
-   
-}
-.heading h1{
-    color: white;
-    font-size: 25px;
-}
-.phrase{
-    display: flex;
-    width: 595px;
-    height: 100px;
-   
-}
-.phrase p{
-    font-size: 15px;
-    color: white;
-}
-
-
-.text-box{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    height: 600px;
-    width: 550px;
-   
-}
-.address-box{
-    align-items: center;
-    display: flex;
-    
-}
-.address-icon-box{
-  width: 100px;  
-  
-}
-.address-icon{
-    margin-left: 20px;
-    display: flex;
-    height: 35px;
+.location-icon{
     background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 30px;
-}
-.address-text{
-    width: 100%;
-    
-}
-.address-text h1{
-    color: rgb(6, 199, 167);
-}
-.address-text p{
-    color: white;
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.phone-box{
-    align-items: center;
-    display: flex;
-    
-}
-.phone-icon-box{
-  width: 100px;  
- 
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+    margin-top: 25%;
+    margin-left: 18%;
+    height: 30px;
 }
 .phone-icon{
-    margin-left: 20px;
-    display: flex;
-    height: 35px;
     background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+    margin-top: 25%;
+    margin-left: 18%;
+    height: 30px;
 }
-.phone-text{
+.mail-icon{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+    background-color: white;
+    margin-top: 25%;
+    margin-left: 18%;
+    height: 30px;
+}
+.text-box{
     width: 100%;
-    
 }
-.phone-text h1{
-    color: rgb(6, 199, 167);
-}
-.phone-text p{
+.text-box h2{
     color: white;
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 15px;
+    font-size: 1.0%rem;
+}
+.text-box p{
+    color: white;
+    font-size: 1.0rem;
     font-weight: 500;
 }
-
-.email-box{
-    align-items: center;
-    display: flex;
-   
-}
-.email-icon-box{
-  width: 100px;  
- 
-}
-.email-icon{
-    margin-left: 20px;
-    display: flex;
-    height: 35px;
-    background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-radius: 30px;
-}
-.email-text{
-    width: 100%;
-    
-}
-.email-text h1{
-    color: rgb(6, 199, 167);
-}
-.email-text p{
+.text-box a{
     color: white;
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 15px;
+    font-size: 1.0rem;
     font-weight: 500;
 }
-
-.input-box{
+.right-section{
     position: absolute;
-    top: 25%;
-    right: 20%;
-    height: 600px;
-    width: 605px;
-    
+    height: 300px;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 210px;
+    margin-right: 60px;
+}
+.maps{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 768px) {
+    body{
+        height: 768px;
+    }
+    .navbar{
+        height: 150px;
+        grid-template-columns: 1fr 1.2fr;
+    }
+    .logo-box{
+        margin-bottom: 20%;
+    }
+    .logo{
+        border-radius: 30px;
+        width: 40%;
+    }
+    .anchor-tags{
+        margin-left: 10%;
+    }
+    .anchor-tags a{
+        font-size: 1.7rem;
+    }   
+    .content{
+        height: 1200px;
+        width: 110%;
+    }
+    .background-image{
+        height: 100%;
+    }
+    .left-section{
+        top: 100px;
+        left: 12%;
+        height: 300px;
+        width:580px;
+    }
+    .grid-upper-section{
+        height: 100px;
+    }
+    .grid-middle-section{
+        height: 100px;
+    }
+    .grid-lower-section{
+        height: 100px;
+    }
+    .location-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 15%;
+        margin-left: 15%;
+        height: 60px;
+    }
+    .phone-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 15%;
+        margin-left: 15%;
+        height: 60px;
+    }
+    .mail-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 15%;
+        margin-left: 15%;
+        height: 60px;
+    }
+    .text-box h2{
+        font-size: 2.5rem;
+    }
+    .text-box p{
+        font-size: 1.7rem;
+    }
+    .text-box a{
+        font-size: 1.7rem;
+    }
+    .right-section{
+        height: 550px;
+        width: 550px;
+        margin-bottom: 200px;
+        margin-right: 150px;
+        left: 14%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    body{
+        height: 992px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar{
+        height: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .logo-box{
+        margin-left: 45px;
+        margin-bottom: 70px;
+        height: 30px;
+    }
+    .logo{
+        border-radius: 20px;
+        width: 30%;
+    }
+    .anchor-tags a{
+        font-size: 2rem;
+    }
+    .content{
+        height: 1200px;
+        width: 110%;
+    }
+    .background-image{
+        height: 100%;
+    }
+    .left-section{
+        top: 220px;
+        left: 5%;
+        height: 300px;
+        width:580px;
+    }
+    .grid-upper-section{
+        height: 100px;
+    }
+    .grid-middle-section{
+        height: 100px;
+    }
+    .grid-lower-section{
+        height: 100px;
+    }
+    .location-icon{
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 25px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .phone-icon{
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 25px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .mail-icon{
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 25px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .text-box h2{
+        font-size: 2rem;
+    }
+    .text-box p{
+        font-size: 1.5rem;
+    }
+    .text-box a{
+        font-size: 1.5rem;
+    }
+    .right-section{
+        height: 400px;
+        width: 400px;
+        top: 1%;
+        margin-top: 160px;
+        margin-right: 90px;
+        left: 55%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        height: 1200px;
+    }
+    .logo-box{
+        margin-left: 20%;
+        margin-bottom: 80px;
+        height: 30px;
+    }
+    .anchor-tags{
+        width: 100%;
+        padding-right: 30%;
+        margin-right: 30%;
+    }
+    .left-section{
+        top: 280px;
+        left: 5%;
+        height: 300px;
+        width: 650px;
+    }
+    .grid-upper-section{
+        height: 100px;
+    }
+    .grid-middle-section{
+        height: 100px;
+    }
+    .grid-lower-section{
+        height: 100px;
+    }
+    .location-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .phone-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .mail-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .text-box h2{
+        font-size: 2.3rem;
+    }
+    .text-box p{
+        font-size: 1.8rem;
+    }
+    .text-box a{
+        font-size: 1.8rem;
+    }
+    .right-section{
+        height: 450px;
+        width: 500px;
+        top: 0;
+        margin-top: 200px;
+        margin-right: 85px;
+    }
+}
+@media only screen and (min-width: 1629px) {
+    body{
+        height: 1000px;
+    }
+    .header{
+        height: 200px;
+    }
+    .logo-box{
+        margin-left: 25%;
+        margin-bottom: 75px;
+    }
+    .anchor-tags{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 30%;
+        margin-right: 10%;
+    }
+    .anchor-tags a{
+        font-size: 1.7rem;
+    }   
+    .left-section{
+        top: 300px;
+        left: 12%;
+        height: 350px;
+        width: 700px;
+    }
+    .grid-upper-section{
+        height: 120px;
+    }
+    .grid-middle-section{
+        height: 120px;
+    }
+    .grid-lower-section{
+        height: 120px;
+    }
+    .location-icon{
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+    .phone-icon{
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+    .mail-icon{
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+    .right-section{
+        height: 480px;
+        width: 550px;
+        top: 0;
+        margin-top: 240px;
+        margin-right: 250px;
+    }
+}
+@media only screen and (min-width: 1800) {
+    .right-section{
+        height: 480px;
+        width: 550px;
+        top: 0;
+        margin-top: 240px;
+        margin-right: 3000px;
+    }
 }

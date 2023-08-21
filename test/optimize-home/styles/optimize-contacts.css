@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;700&display=swap');
+:root{
+
+    --font-color:#9c9c9c;
+    --heading-color:#2c353d;
+    --primar-color: #efbb20;
+    --navbar-color:#2c353d;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    transition:all .2s linear;
+    text-decoration: none;
+    font-family: 'Noto Sans Mono', monospace;
+
+}
+html{
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    background-color: var(--heading-color);
+    height: 414x;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: var(--heading-color);
+    z-index: 2;
+}
+.navbar{
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.logo-box{
+    border-radius: 100px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.logo{
+    border-radius: 10px;
+    width: 40%;
+}
+.anchor-tags{
+    width: 100%;
+}
+.anchor-tags a{
+    color: white;
+    font-size: 1.0rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 10px;
+}
+/*start editting here*/
+.content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+   
+}
+.background-image{
+    object-fit: cover;
+    width: 100%;
+    height: 800px;
+}
+.left-section{
+    position: absolute;
+    top: 40px;
+    left: 6%;
+    height: 300px;
+    width: 360px;
+
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+.grid-upper-section{
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .4fr 2fr;
+    align-items: center;
+}
+.grid-middle-section{
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .4fr 2fr;
+    align-items: center;
+}
+.grid-lower-section{
+    height: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .4fr 2fr;
+    align-items: center;
+}
+.icon-box{
+    height: 100%;
+    width: 100%;
+}
+.location-icon{
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+    margin-top: 25%;
+    margin-left: 18%;
+    height: 30px;
+}
+.phone-icon{
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+    margin-top: 25%;
+    margin-left: 18%;
+    height: 30px;
+}
+.mail-icon{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 13px;
+    background-color: white;
+    margin-top: 25%;
+    margin-left: 18%;
+    height: 30px;
+}
+.text-box{
+    width: 100%;
+}
+.text-box h2{
+    color: white;
+    font-size: 1.0%rem;
+}
+.text-box p{
+    color: white;
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+.right-section{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 210px;
+    margin-right: 60px;
+}
+.maps{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 768px) {
+    body{
+        height: 768px;
+    }
+    .navbar{
+        height: 150px;
+        grid-template-columns: 1fr 1.2fr;
+    }
+    .logo-box{
+        margin-bottom: 20%;
+    }
+    .logo{
+        border-radius: 30px;
+        width: 40%;
+    }
+    .anchor-tags{
+        margin-left: 10%;
+    }
+    .anchor-tags a{
+        font-size: 1.7rem;
+    }   
+    .content{
+        height: 1200px;
+        width: 110%;
+    }
+    .background-image{
+        height: 100%;
+    }
+    .left-section{
+        top: 100px;
+        left: 15%;
+        height: 300px;
+        width:580px;
+    }
+    .grid-upper-section{
+        height: 100px;
+    }
+    .grid-middle-section{
+        height: 100px;
+    }
+    .grid-lower-section{
+        height: 100px;
+    }
+    .location-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 15%;
+        margin-left: 15%;
+        height: 60px;
+    }
+    .phone-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 15%;
+        margin-left: 15%;
+        height: 60px;
+    }
+    .mail-icon{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+        margin-top: 15%;
+        margin-left: 15%;
+        height: 60px;
+    }
+    .text-box h2{
+        font-size: 2.5rem;
+    }
+    .text-box p{
+        font-size: 1.7rem;
+    }
+    .right-section{
+        height: 550px;
+        width: 550px;
+        margin-bottom: 200px;
+        margin-right: 150px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    body{
+        height: 992px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar{
+        height: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .logo-box{
+        margin-left: 45px;
+        margin-bottom: 70px;
+        height: 30px;
+    }
+    .logo{
+        border-radius: 20px;
+        width: 30%;
+    }
+    .anchor-tags a{
+        font-size: 2rem;
+    }
+    .content{
+        height: 1200px;
+        width: 110%;
+    }
+    .background-image{
+        height: 100%;
+    }
+    .left-section{
+        top: 220px;
+        left: 3%;
+        height: 300px;
+        width:580px;
+    }
+    .grid-upper-section{
+        height: 100px;
+    }
+    .grid-middle-section{
+        height: 100px;
+    }
+    .grid-lower-section{
+        height: 100px;
+    }
+    .location-icon{
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 25px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .phone-icon{
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 25px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .mail-icon{
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 25px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .text-box h2{
+        font-size: 2rem;
+    }
+    .text-box p{
+        font-size: 1.5rem;
+    }
+    .right-section{
+        height: 400px;
+        width: 400px;
+        top: 0;
+        margin-top: 160px;
+        margin-right: 90px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+        height: 1200px;
+    }
+    .logo-box{
+        margin-left: 20%;
+        margin-bottom: 80px;
+        height: 30px;
+    }
+    .anchor-tags{
+        width: 100%;
+        padding-right: 30%;
+        margin-right: 30%;
+    }
+    .left-section{
+        top: 280px;
+        left: 6%;
+        height: 300px;
+        width: 650px;
+    }
+    .grid-upper-section{
+        height: 100px;
+    }
+    .grid-middle-section{
+        height: 100px;
+    }
+    .grid-lower-section{
+        height: 100px;
+    }
+    .location-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .phone-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .mail-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 20%;
+        margin-left: 20%;
+        height: 50px;
+    }
+    .text-box h2{
+        font-size: 2.3rem;
+    }
+    .text-box p{
+        font-size: 1.8rem;
+    }
+    .right-section{
+        height: 450px;
+        width: 500px;
+        top: 0;
+        margin-top: 200px;
+        margin-right: 85px;
+    }
+}
+@media only screen and (min-width: 1629px) {
+    body{
+        height: 1000px;
+    }
+    .header{
+        height: 200px;
+    }
+    .logo-box{
+        margin-left: 25%;
+        margin-bottom: 75px;
+    }
+    .anchor-tags{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 30%;
+        margin-right: 10%;
+    }
+    .anchor-tags a{
+        font-size: 1.7rem;
+    }   
+    .left-section{
+        top: 300px;
+        left: 15%;
+        height: 350px;
+        width: 700px;
+    }
+    .grid-upper-section{
+        height: 120px;
+    }
+    .grid-middle-section{
+        height: 120px;
+    }
+    .grid-lower-section{
+        height: 120px;
+    }
+    .location-icon{
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+    .phone-icon{
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+    .mail-icon{
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+    .right-section{
+        height: 480px;
+        width: 550px;
+        top: 0;
+        margin-top: 240px;
+        margin-right: 250px;
+    }
+}
