@@ -144,8 +144,6 @@ body{
     width: 335px;
     bottom: -1;
     right: 0;
-    margin-top: 330px;
-    margin-right: 10px;
 }
 .maps{
     object-fit: cover;
@@ -238,9 +236,10 @@ body{
         position: absolute;
         height: 300px;
         width: 335px;
-        right: 0;
-        left: 20px;
-        bottom: 800px;
+        top: 300%;
+        right: 0%;
+        left: 5%;
+        bottom: 0%;
     }
     .text-box p{
         color: white;
@@ -687,7 +686,7 @@ body{
        
     }
 }
-/*@media only screen and (min-width: 1900px
+@media only screen and (min-width: 1900px
 ) {
     body{
         height: 100px;
@@ -697,7 +696,7 @@ body{
     }
     .left-section{
         top: 25%;
-        left: 70%;
+        left: 60%;
         height: 350px;
         width: 700px;
     }
@@ -725,7 +724,7 @@ body{
     .right-section{
         height: 480px;
         width: 550px;
-        left: 250%;
+        left: 230%;
         top: -5%;
     }
 }

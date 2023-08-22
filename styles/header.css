@@ -301,14 +301,14 @@
         padding-right: 30px;
     }
 }
-/*
+
 @media only screen and (min-width: 1900px) {
     .header{
         background-color: var(--heading-color);
         z-index: 2;
     }
     .navbar{
-        height: 230px;
+        height: 210px;
         display: grid;
         grid-template-columns: 300px 1000px 100px;
         align-items: center;
@@ -319,8 +319,8 @@
         margin-left: -400px;
         margin-bottom: 200px;
         margin-top: 23px;
-        height: 180px;
-        width: 250px;
+        height: 160px;
+        width: 220px;
     }
     .logo{
         border-radius: 10px;
@@ -328,11 +328,10 @@
     }
     .bizsafe-logo{
         margin-top: 23px;
-        height: 180px;
-        width: 300px;
+        height: 150px;
+        width: 250px;
         margin-left: -400px;
         margin-bottom: 200px;
-
     }
     .bizsafe-logo-image{
         width: 100%;
@@ -340,16 +339,17 @@
     .anchor-tags{
         position: absolute;
         right: 0;
-        margin-right: -100px;
+        margin-right: 100px;
         padding-top: 0px;
         padding-bottom: 5px;
-        width: 850px;
-        height: 60px;
+        width: 700px;
+        height: 50px;
+        
     }
     .anchor-tags a{
         color: white;
         font-weight: 500;
-        font-size: 4rem;
+        font-size: 2.5rem;
         padding-left: 3px;
         padding-right: 30px;
     }
