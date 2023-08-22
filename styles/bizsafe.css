@@ -1,11 +1,11 @@
 .bizsafe-logo{
     position: absolute;
-    top: 4.6%;
-    left: 19%;
+    top: 5%;
+    left: 25%;
     border-radius: 100px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    height: 30px;
+    width: 300px;
+    display: flex;
+    height: 40px;
     z-index: 3;
 }
 .bizsafe-logo-image{
