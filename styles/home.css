@@ -67,7 +67,7 @@ body{
 }
 .footer{
     background-color: var(--heading-color);
-    height: 150px;
+    height: 170px;
 }
 .grid{
     display: grid;
@@ -110,14 +110,14 @@ body{
         font-size: 1.8rem;
     }
     .footer{
-        height: 180px;
+        height: 200px;
     }
     .grid{
-        padding-top: 10px;
-        column-gap: 0px;
+       column-gap: 0px;
     }
     .footer h2{
         padding-bottom: 2px;
+         padding-top: 10px;
         font-size: 2.0rem;
         color: white;
     }
@@ -153,7 +153,7 @@ body{
     .footer{
         padding-top: 10px;
         padding-bottom: 10px;
-        height: 190px;
+        height: 210px;
     }
     .left-section{
         padding-left: 20px;
@@ -182,8 +182,8 @@ body{
         height: 120px;
     }
     .footer{
-        height: 170px;
-        padding-top: 5px;
+        height: 190px;
+        padding-top: 0px;
     }
     .grid{
         padding-left: 5%;
@@ -211,6 +211,26 @@ body{
         width: 48%;
         height: 120px;
     } 
+    .footer{
+        height: 210px;
+        padding-top: 0px;
+    }
+    .grid{
+        padding-left: 5%;
+        padding-top: 1.8%;
+        column-gap: 0px;
+    }
+    .footer h2{
+        padding-bottom: 2px;
+        font-size: 2.4rem;
+        color: white;
+    }
+    .footer p{
+        font-size: 1.9rem;
+    }
+    .footer a{
+        font-size: 1.9rem;
+    }
 }
 @media only screen and (min-width: 1629px) {
     body{
@@ -222,9 +242,13 @@ body{
     .text-box p{
         font-size: 2.3rem;
     }
+    footer{
+        padding-left: 100px;
+        height: 210px;
+    }
     .grid{
         padding-left: 10%;
-        padding-top: 1%;
+        padding-top: 1.8%;
         column-gap: 0px;
     }
 }

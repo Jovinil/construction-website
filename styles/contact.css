@@ -28,90 +28,63 @@ html{
     scroll-padding-top: 6rem;
 }
 body{
-    background-color: var(--heading-color);
-    height: 414x;
+    width: 320px;
+    height: 414px;
     padding: 0;
     margin: 0;
-}
-.header{
-    background-color: var(--heading-color);
-    z-index: 2;
-}
-.navbar{
-    height: 120px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-.logo-box{
-    border-radius: 100px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    height: 30px;
-}
-.logo{
-    border-radius: 10px;
-    width: 40%;
-}
-.anchor-tags{
-    width: 100%;
-}
-.anchor-tags a{
-    color: white;
-    font-size: 1.0rem;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-right: 10px;
 }
 /*start editting here*/
 .content{
     position: relative;
-    height: 100%;
+    height: 100px;
     width: 100%;
-   
 }
 .background-image{
     object-fit: cover;
-    width: 100%;
+    object-position: center;
+    width: 320px;
     height: 800px;
 }
 .left-section{
     position: absolute;
     top: 40px;
-    left: 6%;
+    left: 0%;
     height: 300px;
     width: 360px;
-
 }
 .grid{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    
 }
 .grid-upper-section{
     height: 70px;
     width: 100%;
     display: grid;
-    grid-template-columns: .4fr 2fr;
+    grid-template-columns: .4fr 3.5fr;
     align-items: center;
 }
 .grid-middle-section{
     height: 70px;
     width: 100%;
     display: grid;
-    grid-template-columns: .4fr 2fr;
+    grid-template-columns: .4fr 3.5fr;
     align-items: center;
+    margin-top: 10px;
 }
 .grid-lower-section{
+    bottom: 0;
     height: 70px;
     width: 100%;
     display: grid;
-    grid-template-columns: .4fr 2fr;
+    grid-template-columns: .4fr 3.5fr;
     align-items: center;
+    margin-top: 40px;
+   
 }
 .icon-box{
-    height: 100%;
+
+    height: 60%;
     width: 100%;
 }
 .location-icon{
@@ -121,9 +94,9 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 13px;
-    margin-top: 25%;
-    margin-left: 18%;
-    height: 30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 26px;
 }
 .phone-icon{
     background-color: white;
@@ -132,9 +105,9 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 13px;
-    margin-top: 25%;
-    margin-left: 18%;
-    height: 30px;
+    margin-top: 40%;
+    margin-left: 10%;
+    height: 26px;
 }
 .mail-icon{
     padding-left: 5px;
@@ -143,72 +116,267 @@ body{
     padding-bottom: 5px;
     border-radius: 13px;
     background-color: white;
-    margin-top: 25%;
-    margin-left: 18%;
-    height: 30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 26px;
 }
 .text-box{
     width: 100%;
+    margin-right: 100px;
 }
 .text-box h2{
     color: white;
-    font-size: 1.0%rem;
+    font-size: 1.8rem;
 }
 .text-box p{
     color: white;
-    font-size: 1.0rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 .text-box a{
     color: white;
-    font-size: 1.0rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 .right-section{
     position: absolute;
     height: 300px;
-    width: 300px;
-    bottom: 0;
+    width: 335px;
+    bottom: -1;
     right: 0;
-    margin-bottom: 210px;
-    margin-right: 60px;
+    margin-top: 330px;
+    margin-right: 10px;
 }
 .maps{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+@media only screen and (min-width: 375px) {
+    body{
+        width: 375px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    /*start editting here*/
+    .background-image{
+        width: 375px;
+        height: 770px;
+        object-fit: cover;
+    }
+    .left-section{
+        position: absolute;
+        top: 40px;
+        left: 2.5%;
+        height: 300px;
+        width: 360px;
+    }
+    .grid-upper-section{
+        height: 70px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: .4fr 3.5fr;
+        align-items: center;
+    }
+    .grid-middle-section{
+        height: 70px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: .4fr 3.5fr;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .grid-lower-section{
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: .4fr 3.5fr;
+        align-items: center;
+        margin-top: 6px;
+       
+    }
+    .icon-box{
+        height: 60%;
+        width: 100%;
+    }
+    .location-icon{
+        background-color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        margin-top: 10%;
+        margin-left: 10%;
+        height: 26px;
+    }
+    .phone-icon{
+        background-color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        margin-top: 40%;
+        margin-left: 10%;
+        height: 26px;
+    }
+    .mail-icon{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        background-color: white;
+        margin-top: 25%;
+        margin-left: 10%;
+        height: 26px;
+    }
+    .right-section{
+        position: absolute;
+        height: 300px;
+        width: 335px;
+        right: 0;
+        left: 20px;
+        bottom: 800px;
+    }
+    .text-box p{
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-left: 3px;
+    }
+    .text-box a{
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+        padding-left: 3px;
+    }
+}
+@media only screen and (min-width: 425px) {
+    body{
+        background-image: url("contact-background2.jpeg");
+        width: 425px;
+        height: 414px;
+        padding: 0;
+        margin: 0;
+    }
+    /*start editting here*/
+    .content{
+        position: relative;
+        height: 100px;
+        width: 100%;
+       
+    }
+    .background-image{
+        display: none;
+        object-fit: cover;
+      
+    }
+    .left-section{
+        position: absolute;
+        top: 40px;
+        left: 10%;
+        height: 300px;
+        width: 360px;
+    }
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .grid-upper-section{
+        height: 70px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: .4fr 2.5fr;
+        align-items: center;
+    }
+    .grid-middle-section{
+        height: 70px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: .4fr 2.5fr;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .grid-lower-section{
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: .4fr 2.5fr;
+        align-items: center;
+        margin-top: 20px;
+       
+    }
+    .icon-box{
+        height: 60%;
+        width: 100%;
+    }
+    .location-icon{
+        background-color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        margin-top: 10%;
+        margin-left: 10%;
+        height: 26px;
+    }
+    .phone-icon{
+        background-color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        margin-top: 30%;
+        margin-left: 10%;
+        height: 26px;
+    }
+    .mail-icon{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 13px;
+        background-color: white;
+        margin-top: 15%;
+        margin-left: 10%;
+        height: 26px;
+    }
+    .right-section{
+        position: absolute;
+        height: 300px;
+        width: 335px;
+        top: 0;
+        right: 0;
+        left: 45px;
+    }
+}
 @media only screen and (min-width: 768px) {
     body{
         height: 768px;
     }
-    .navbar{
-        height: 150px;
-        grid-template-columns: 1fr 1.2fr;
+    .header{
+        width: 768px;
     }
-    .logo-box{
-        margin-bottom: 20%;
-    }
-    .logo{
-        border-radius: 30px;
-        width: 40%;
-    }
-    .anchor-tags{
-        margin-left: 10%;
-    }
-    .anchor-tags a{
-        font-size: 1.7rem;
-    }   
     .content{
-        height: 1200px;
-        width: 110%;
+        height: 1000px;
+        width: 150px;
+        background-repeat: no-repeat;
     }
     .background-image{
-        height: 100%;
+        height: 100px;
+        width: 100px;
     }
     .left-section{
-        top: 100px;
-        left: 12%;
+        top: 5%;
+        left: 60%;
         height: 300px;
         width:580px;
     }
@@ -263,34 +431,13 @@ body{
     .right-section{
         height: 550px;
         width: 550px;
-        margin-bottom: 200px;
-        margin-right: 150px;
-        left: 14%;
+        left: 65%;
+        top: 10%;
     }
 }
 @media only screen and (min-width: 992px) {
-    body{
-        height: 992px;
-        padding: 0;
-        margin: 0;
-    }
-    .navbar{
-        height: 150px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-    .logo-box{
-        margin-left: 45px;
-        margin-bottom: 70px;
-        height: 30px;
-    }
-    .logo{
-        border-radius: 20px;
-        width: 30%;
-    }
-    .anchor-tags a{
-        font-size: 2rem;
+    .header{
+        width: 992px;
     }
     .content{
         height: 1200px;
@@ -356,10 +503,8 @@ body{
     .right-section{
         height: 400px;
         width: 400px;
-        top: 1%;
-        margin-top: 160px;
-        margin-right: 90px;
-        left: 55%;
+        top: -10%;
+        left: 115%;
     }
 }
 
@@ -367,15 +512,8 @@ body{
     body{
         height: 1200px;
     }
-    .logo-box{
-        margin-left: 20%;
-        margin-bottom: 80px;
-        height: 30px;
-    }
-    .anchor-tags{
-        width: 100%;
-        padding-right: 30%;
-        margin-right: 30%;
+    .header{
+        width: 1200px;
     }
     .left-section{
         top: 280px;
@@ -434,41 +572,89 @@ body{
     .right-section{
         height: 450px;
         width: 500px;
-        top: 0;
-        margin-top: 200px;
-        margin-right: 85px;
+        top: -8%;
+        left: 135%;
     }
 }
 @media only screen and (min-width: 1440px) {
     .header{
-        background-color: var(--heading-color);
-        z-index: 2;
-        height: 180px;
+        width: 1440px;
     }
+    .left-section{
+        top: 20%;
+        left: 20%;
+        height: 300px;
+        width: 650px;
+    }
+    .grid-upper-section{
+        height: 100px;
+        width: 700px;
+    }
+    .grid-middle-section{
+        height: 100px;
+        width: 700px;
+    }
+    .grid-lower-section{
+        height: 100px;
+        width: 700px;
+    }
+    .location-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 5%;
+        margin-left: 20%;
+        height: 60px;
+    }
+    .phone-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 4%;
+        margin-left: 20%;
+        height: 60px;
+    }
+    .mail-icon{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 28px;
+        margin-top: 3%;
+        margin-left: 20%;
+        height: 60px;
+    }
+    .text-box h2{
+        font-size: 3rem;
+    }
+    .text-box p{
+        font-size: 2.2rem;
+    }
+    .text-box a{
+        font-size: 2.2rem;
+    }
+    .right-section{
+        height: 450px;
+        width: 500px;
+        top: -11%;
+        left: 175%;
+    }
+    
 }
 @media only screen and (min-width: 1629px) {
     body{
         height: 1000px;
     }
     .header{
-        height: 200px;
+        width: 1629px;
     }
-    .logo-box{
-        margin-left: 25%;
-        margin-bottom: 75px;
-    }
-    .anchor-tags{
-        width: 100%;
-        margin-top: 5%;
-        margin-left: 30%;
-        margin-right: 10%;
-    }
-    .anchor-tags a{
-        font-size: 1.7rem;
-    }   
     .left-section{
         top: 300px;
-        left: 12%;
+        left: 22%;
         height: 350px;
         width: 700px;
     }
@@ -496,17 +682,50 @@ body{
     .right-section{
         height: 480px;
         width: 550px;
-        top: 0;
-        margin-top: 240px;
-        margin-right: 250px;
+        left: 190%;
+        top: -5%;
+       
     }
 }
-@media only screen and (min-width: 1800) {
+/*@media only screen and (min-width: 1900px
+) {
+    body{
+        height: 100px;
+    }
+    .header{
+        width: 2110px;
+    }
+    .left-section{
+        top: 25%;
+        left: 70%;
+        height: 350px;
+        width: 700px;
+    }
+    .grid-upper-section{
+        height: 120px;
+    }
+    .grid-middle-section{
+        height: 120px;
+    }
+    .grid-lower-section{
+        height: 120px;
+    }
+    .location-icon{
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+    .phone-icon{
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+    .mail-icon{
+        margin-top: 10%;
+        margin-left: 25%;
+    }
     .right-section{
         height: 480px;
         width: 550px;
-        top: 0;
-        margin-top: 240px;
-        margin-right: 3000px;
+        left: 250%;
+        top: -5%;
     }
 }

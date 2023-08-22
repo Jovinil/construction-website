@@ -32,36 +32,7 @@ body{
     padding: 0;
     margin: 0;
 }
-.header{
-    background-color: var(--heading-color);
-    z-index: 2;
-}
-.navbar{
-    height: 120px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-.logo-box{
-    border-radius: 100px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    height: 30px;
-}
-.logo{
-    border-radius: 10px;
-    width: 40%;
-}
-.anchor-tags{
-    width: 100%;
-}
-.anchor-tags a{
-    color: white;
-    font-size: 1.0rem;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-right: 10px;
-}
+
 .content{
     z-index: 0;
     position: relative;
@@ -114,7 +85,7 @@ body{
 .footer{
     bottom: 0;
     background-color: var(--heading-color);
-    height: 130px;
+    height: 155px;
 }
 .grid{
     padding-top: 1%;
@@ -140,26 +111,6 @@ body{
 }
 
 @media only screen and (min-width: 768px) {
-    .navbar{
-        height: 150px;
-        grid-template-columns: 1fr 1.2fr;
-    }
-    .logo-box{
-        margin-bottom: 20%;
-    }
-    .logo{
-        border-radius: 30px;
-        width: 40%;
-    }
-    .anchor-tags{
-        margin-left: 10%;
-    }
-    .anchor-tags a{
-        font-size: 1.7rem;
-    }
-    .content{
-        height: 1050px;
-    }
     /*edit here*/
     .heading{
         padding-top: 10px;
@@ -202,10 +153,10 @@ body{
     /*end of edit*/
     .footer{
         padding-left: 10px;
-        height: 170px;
+        height: 190px;
     }
     .grid{
-        padding-left: 1%;
+        padding-left: 0.5%;
         padding-top: 2.5%;
         column-gap: 0px;
     }
@@ -227,24 +178,6 @@ body{
 }
 
 @media only screen and (min-width: 992px) {
-    .navbar{
-        height: 150px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-    .logo-box{
-        margin-left: 45px;
-        margin-bottom: 70px;
-        height: 30px;
-    }
-    .logo{
-        border-radius: 20px;
-        width: 30%;
-    }
-    .anchor-tags a{
-        font-size: 2rem;
-    }
     /*edit here*/
     .content{
         height: 1280px;
@@ -285,7 +218,7 @@ body{
     /*end*/
     .footer{
         padding-left: 15px;
-        height: 200px;
+        height: 215px;
     }
     .footer h2{
         padding-bottom: 2px;
@@ -303,16 +236,6 @@ body{
 @media only screen and (min-width: 1200px) {
     body{
         height: 1200px;
-    }
-    .logo-box{
-        margin-left: 20%;
-        margin-bottom: 80px;
-        height: 30px;
-    }
-    .anchor-tags{
-        width: 100%;
-        padding-right: 30%;
-        margin-right: 30%;
     }
     /*edit here*/
     .content{
@@ -358,7 +281,7 @@ body{
     /*end*/
     .footer{
         padding-left: 10px;
-        height: 190px;
+        height: 210px;
     }
     .grid{
         padding-left: 5%;
@@ -367,38 +290,20 @@ body{
     }
     .footer h2{
         padding-bottom: 2px;
-        font-size: 2.0rem;
+        font-size: 2.3rem;
         color: white;
     }
     .footer p{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     .footer a{
-        font-size: 1.7rem;
+        font-size: 1.74rem;
     }
 }
 @media only screen and (min-width: 1440px) {
     body{
         height: 1000px;
-    }
-    .header{
-        background-color: var(--heading-color);
-        z-index: 2;
-        height: 180px;
-    }
-    .logo-box{
-        margin-left: 25%;
-        margin-bottom: 50px;
-    }
-    .anchor-tags{
-        width: 100%;
-        margin-top: 5%;
-        margin-left: 30%;
-        margin-right: 10%;
-    }
-    .anchor-tags a{
-        font-size: 1.7rem;
-    }   
+    } 
     /*start*/
     .content{
         height: 1100px;
@@ -411,29 +316,31 @@ body{
         font-size: 2rem;
         padding-left: 20%;
     }
+    .footer{
+        padding-left: 10px;
+        height: 205px;
+    }
+    .grid{
+        padding-left: 5%;
+        padding-top: 2%;
+        column-gap: 0px;
+    }
+    .footer h2{
+        padding-bottom: 2px;
+        font-size: 2.5rem;
+        color: white;
+    }
+    .footer p{
+        font-size: 1.9rem;
+    }
+    .footer a{
+        font-size: 1.9rem;
+    }
 }
 @media only screen and (min-width: 1629px) {
     body{
         height: 1000px;
     }
-    .header{
-        background-color: var(--heading-color);
-        z-index: 2;
-        height: 200px;
-    }
-    .logo-box{
-        margin-left: 25%;
-        margin-bottom: 75px;
-    }
-    .anchor-tags{
-        width: 100%;
-        margin-top: 5%;
-        margin-left: 30%;
-        margin-right: 10%;
-    }
-    .anchor-tags a{
-        font-size: 1.7rem;
-    }   
     /*start*/
     .content{
         height: 1050px;
@@ -476,7 +383,7 @@ body{
     .footer{
         padding-top: 15px;
         padding-left: 30px;
-        height: 170px;
+        height: 210px;
     }
     .grid{
         padding-left: 10%;
