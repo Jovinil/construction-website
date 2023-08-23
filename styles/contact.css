@@ -27,705 +27,273 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
 }
-body{
-    width: 360px;
-    height: 414px;
-    padding: 0;
-    margin: 0;
+.background-image{
+    background-image: url("/images/contact-background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
-/*start editting here*/
 .content{
     position: relative;
-    height: 100px;
     width: 100%;
+    height: 100vh;
 }
-.background-image{
-    object-fit: cover;
-    object-position: center;
-    width: 360px;
-    height: 825px;
-}
-.left-section{
+.information-grid{
     position: absolute;
-    top: 40px;
-    left: 0%;
-    height: 300px;
-    width: 360px;
-}
-.grid{
+    top: 1%;
+    left: 2.5%;
+    right: 0%;
+    width: 95%;
+    height: 40%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-rows: 33% 33% 33%;
+    row-gap: 3%;
 }
-.grid-upper-section{
-    height: 70px;
+.text-box-layout{
+    height: 80%;
     width: 100%;
-    display: grid;
-    grid-template-columns: .4fr 3.5fr;
-    align-items: center;
 }
-.grid-middle-section{
-    height: 70px;
+.icon-text-grid{
     width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: .4fr 3.5fr;
+    grid-template-columns: 15% 85%;
     align-items: center;
-    margin-top: 10px;
-}
-.grid-lower-section{
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: .4fr 3.5fr;
-    align-items: center;
-    margin-top: 40px;
-   
 }
 .icon-box{
-
-    height: 60%;
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
-.location-icon{
+#location{
     background-color: white;
+    width: 80%;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 13px;
-    margin-top: 10%;
-    margin-left: 10%;
-    height: 26px;
+    border-radius: 15px;
 }
-.phone-icon{
+#whatsapp{
     background-color: white;
+    width: 80%;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 13px;
-    margin-top: 40%;
-    margin-left: 10%;
-    height: 26px;
+    border-radius: 15px;
 }
-.mail-icon{
+#mail{
+    background-color: white;
+    width: 80%;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 13px;
-    background-color: white;
-    margin-top: 10%;
-    margin-left: 10%;
-    height: 26px;
-}
-.text-box{
-    width: 100%;
-    margin-right: 100px;
+    border-radius: 15px;
 }
 .text-box h2{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 .text-box p{
     color: white;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
+    text-shadow: 0px 0px rgb(255, 255, 255);
 }
 .text-box a{
     color: white;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
+    text-shadow: 0px 0px rgb(255, 255, 255);
 }
-.right-section{
+.map-box{
     position: absolute;
-    height: 300px;
-    width: 335px;
-    top: 340%;
+    top: 45%;
     bottom: 0%;
-    right: 4%;
+    left: 2.5%;
+    right: 0%;
+    width: 95%;
+    height: 40%;
 }
 .maps{
-    object-fit: cover;
     width: 100%;
     height: 100%;
 }
-@media only screen and (min-width: 375px) {
-    body{
-        width: 375px;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    }
-    /*start editting here*/
-    .background-image{
-        width: 375px;
-        height: 770px;
-        object-fit: cover;
-    }
-    .left-section{
-        position: absolute;
-        top: 40px;
-        left: 2.5%;
-        height: 300px;
-        width: 360px;
-    }
-    .grid-upper-section{
-        height: 70px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: .4fr 3.5fr;
-        align-items: center;
-    }
-    .grid-middle-section{
-        height: 70px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: .4fr 3.5fr;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .grid-lower-section{
-        bottom: 0;
-        height: 70px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: .4fr 3.5fr;
-        align-items: center;
-        margin-top: 6px;
-       
-    }
-    .icon-box{
-        height: 60%;
-        width: 100%;
-    }
-    .location-icon{
-        background-color: white;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 13px;
-        margin-top: 10%;
-        margin-left: 10%;
-        height: 26px;
-    }
-    .phone-icon{
-        background-color: white;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 13px;
-        margin-top: 40%;
-        margin-left: 10%;
-        height: 26px;
-    }
-    .mail-icon{
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 13px;
-        background-color: white;
-        margin-top: 25%;
-        margin-left: 10%;
-        height: 26px;
-    }
-    .right-section{
-        position: absolute;
-        height: 300px;
-        width: 335px;
-        top: 300%;
-        right: 0%;
+@media only screen and (min-width: 375px) and (max-width: 425px){
+    .information-grid{
+        top: 2%;
         left: 5%;
+        width: 90%;
+        height: 40%;
+        grid-template-rows: 30% 35% 30%;
+        row-gap: 0%;
+    }
+    /*edit here*/
+    .icon-text-grid{
+        display: grid;
+        grid-template-columns: 13% 87%;
+    }
+    .text-box h2{
+        font-size: 1.8rem;
+    }
+    .text-box p{
+        font-size: 1.41rem;
+    }
+    .text-box a{
+        font-size: 1.41rem;
+    }
+    /*edit end*/
+    .map-box{
+        top: 40%;
+        left: 8%;
+        width: 85%;
+        height: 40%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .information-grid{
+        top: 20%;
+        left: 4%;
+
+        width: 55%;
+        row-gap: 2%;
+    }
+    .icon-text-grid{
+        grid-template-columns: 10% 90%;
+    }
+    #location{
+        width: 90%;
+        border-radius: 20px;
+    }
+    #whatsapp{
+        width: 90%;
+        border-radius: 20px;
+    }
+    #mail{
+        width: 90%;
+        border-radius: 20px;
+    }
+    .text-box h2{
+        font-size: 1.9rem;
+    }
+    .text-box p{
+
+        font-size: 1.5rem;
+    }
+    .text-box a{
+        font-size: 1.5rem;
+    }
+    .map-box{
+        top: 20%;
         bottom: 0%;
-    }
-    .text-box p{
-        color: white;
-        font-size: 1.3rem;
-        font-weight: 700;
-        padding-left: 3px;
-    }
-    .text-box a{
-        color: white;
-        font-size: 1.3rem;
-        font-weight: 700;
-        padding-left: 3px;
+        left: 57.1%;
+        width: 30%;
+        height: 40%;
     }
 }
-@media only screen and (min-width: 425px) {
-    body{
-        background-image: url("contact-background2.jpeg");
-        width: 425px;
-        height: 414px;
-        padding: 0;
-        margin: 0;
-    }
-    /*start editting here*/
-    .content{
-        position: relative;
-        height: 100px;
-        width: 100%;
-       
-    }
-    .background-image{
-        display: none;
-        object-fit: cover;
-      
-    }
-    .left-section{
-        position: absolute;
-        top: 40px;
-        left: 10%;
-        height: 300px;
-        width: 360px;
-    }
-    .grid{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-items: center;
-    }
-    .grid-upper-section{
-        height: 70px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: .4fr 2.5fr;
-        align-items: center;
-    }
-    .grid-middle-section{
-        height: 70px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: .4fr 2.5fr;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .grid-lower-section{
-        bottom: 0;
-        height: 70px;
-        width: 100%;
-        display: grid;
-        grid-template-columns: .4fr 2.5fr;
-        align-items: center;
-        margin-top: 20px;
-       
-    }
-    .icon-box{
-        height: 60%;
-        width: 100%;
-    }
-    .location-icon{
-        background-color: white;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 13px;
-        margin-top: 10%;
-        margin-left: 10%;
-        height: 26px;
-    }
-    .phone-icon{
-        background-color: white;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 13px;
-        margin-top: 30%;
-        margin-left: 10%;
-        height: 26px;
-    }
-    .mail-icon{
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 13px;
-        background-color: white;
-        margin-top: 15%;
-        margin-left: 10%;
-        height: 26px;
-    }
-    .right-section{
-        position: absolute;
-        height: 300px;
-        width: 335px;
-        top: 320%;
-        right: 0%;
-        left: 11%;
-    }
-}
-@media only screen and (min-width: 768px) {
-    body{
-        height: 768px;
-    }
-    .header{
-        width: 768px;
-    }
-    .content{
-        height: 1000px;
-        width: 150px;
-        background-repeat: no-repeat;
-    }
-    .background-image{
-        height: 100px;
-        width: 100px;
-    }
-    .left-section{
-        top: 5%;
-        left: 60%;
-        height: 300px;
-        width:580px;
-    }
-    .grid-upper-section{
-        height: 100px;
-    }
-    .grid-middle-section{
-        height: 100px;
-    }
-    .grid-lower-section{
-        height: 100px;
-    }
-    .location-icon{
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 25px;
-        margin-top: 15%;
-        margin-left: 15%;
-        height: 60px;
-    }
-    .phone-icon{
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 25px;
-        margin-top: 15%;
-        margin-left: 15%;
-        height: 60px;
-    }
-    .mail-icon{
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 25px;
-        margin-top: 15%;
-        margin-left: 15%;
-        height: 60px;
-    }
-    .text-box h2{
-        font-size: 2.5rem;
-    }
-    .text-box p{
-        font-size: 1.7rem;
-    }
-    .text-box a{
-        font-size: 1.7rem;
-    }
-    .right-section{
-        height: 550px;
-        width: 550px;
-        left: 68%;
-        top: 42%;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .header{
-        width: 992px;
-    }
-    .content{
-        height: 1200px;
-        width: 110%;
-    }
-    .background-image{
-        height: 100%;
-    }
-    .left-section{
-        top: 220px;
+@media only screen and (min-width: 1200px) and (max-width: 1440px){
+    .information-grid{
+        top: 23%;
         left: 5%;
-        height: 300px;
-        width:580px;
+        right: 0%;
+        width: 50%;
+        height: 50%;
+        row-gap: 1%;
     }
-    .grid-upper-section{
-        height: 100px;
+    #location{
+        margin-left: 18%;
+        width: 60%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 40px;
     }
-    .grid-middle-section{
-        height: 100px;
+    #whatsapp{
+        margin-left: 18%;
+        width: 60%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 40px;
     }
-    .grid-lower-section{
-        height: 100px;
-    }
-    .location-icon{
-        padding-left: 13px;
-        padding-right: 13px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        border-radius: 25px;
-        margin-top: 20%;
-        margin-left: 20%;
-        height: 50px;
-    }
-    .phone-icon{
-        padding-left: 13px;
-        padding-right: 13px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        border-radius: 25px;
-        margin-top: 20%;
-        margin-left: 20%;
-        height: 50px;
-    }
-    .mail-icon{
-        padding-left: 13px;
-        padding-right: 13px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        border-radius: 25px;
-        margin-top: 20%;
-        margin-left: 20%;
-        height: 50px;
+    #mail{
+        margin-left: 18%;
+        width: 60%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 40px;
     }
     .text-box h2{
+        font-size: 2.7rem;
+    }
+    .text-box p{
         font-size: 2rem;
     }
-    .text-box p{
-        font-size: 1.5rem;
+    .text-box a{      
+        font-size: 2rem;
     }
-    .text-box a{
-        font-size: 1.5rem;
-    }
-    .right-section{
-        height: 400px;
-        width: 400px;
-        top: 18%;
-        left: 115%;
+    .map-box{
+        top: 23%;
+        left: 53%;
+        width: 40%;
+        height: 50%;
     }
 }
-
-@media only screen and (min-width: 1200px) {
-    body{
-        height: 1200px;
-    }
-    .header{
-        width: 1200px;
-    }
-    .left-section{
-        top: 280px;
+@media only screen and (min-width: 1629px){
+    .information-grid{
+        top: 23%;
         left: 5%;
-        height: 300px;
-        width: 650px;
+        right: 0%;
+        width: 50%;
+        height: 50%;
+        row-gap: 1%;
     }
-    .grid-upper-section{
-        height: 100px;
+    #location{
+        margin-left: 18%;
+        width: 60%;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 40px;
     }
-    .grid-middle-section{
-        height: 100px;
+    #whatsapp{
+        margin-left: 18%;
+        width: 60%;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 40px;
     }
-    .grid-lower-section{
-        height: 100px;
-    }
-    .location-icon{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 28px;
-        margin-top: 20%;
-        margin-left: 20%;
-        height: 50px;
-    }
-    .phone-icon{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 28px;
-        margin-top: 20%;
-        margin-left: 20%;
-        height: 50px;
-    }
-    .mail-icon{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 28px;
-        margin-top: 20%;
-        margin-left: 20%;
-        height: 50px;
-    }
-    .text-box h2{
-        font-size: 2.3rem;
-    }
-    .text-box p{
-        font-size: 1.8rem;
-    }
-    .text-box a{
-        font-size: 1.8rem;
-    }
-    .right-section{
-        height: 450px;
-        width: 500px;
-        top: 20%;
-        left: 135%;
-    }
-}
-@media only screen and (min-width: 1440px) {
-    .header{
-        width: 1440px;
-    }
-    .left-section{
-        top: 20%;
-        left: 20%;
-        height: 300px;
-        width: 650px;
-    }
-    .grid-upper-section{
-        height: 100px;
-        width: 700px;
-    }
-    .grid-middle-section{
-        height: 100px;
-        width: 700px;
-    }
-    .grid-lower-section{
-        height: 100px;
-        width: 700px;
-    }
-    .location-icon{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 28px;
-        margin-top: 5%;
-        margin-left: 20%;
-        height: 60px;
-    }
-    .phone-icon{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 28px;
-        margin-top: 4%;
-        margin-left: 20%;
-        height: 60px;
-    }
-    .mail-icon{
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 28px;
-        margin-top: 3%;
-        margin-left: 20%;
-        height: 60px;
+    #mail{
+        margin-left: 18%;
+        width: 60%;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        border-radius: 40px;
     }
     .text-box h2{
         font-size: 3rem;
     }
     .text-box p{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
-    .text-box a{
-        font-size: 2.2rem;
+    .text-box a{      
+        font-size: 2.5rem;
     }
-    .right-section{
-        height: 450px;
-        width: 500px;
-        top: 18%;
-        left: 175%;
-    }
-    
-}
-@media only screen and (min-width: 1629px) {
-    body{
-        height: 1000px;
-    }
-    .header{
-        width: 1629px;
-    }
-    .left-section{
-        top: 300px;
-        left: 22%;
-        height: 350px;
-        width: 700px;
-    }
-    .grid-upper-section{
-        height: 120px;
-    }
-    .grid-middle-section{
-        height: 120px;
-    }
-    .grid-lower-section{
-        height: 120px;
-    }
-    .location-icon{
-        margin-top: 25%;
-        margin-left: 25%;
-    }
-    .phone-icon{
-        margin-top: 25%;
-        margin-left: 25%;
-    }
-    .mail-icon{
-        margin-top: 25%;
-        margin-left: 25%;
-    }
-    .right-section{
-        height: 480px;
-        width: 550px;
-        left: 190%;
-        top: 22%;
-       
-    }
-}
-@media only screen and (min-width: 1900px
-) {
-    body{
-        height: 100px;
-    }
-    .header{
-        width: 2110px;
-    }
-    .left-section{
-        top: 25%;
-        left: 60%;
-        height: 350px;
-        width: 700px;
-    }
-    .grid-upper-section{
-        height: 120px;
-    }
-    .grid-middle-section{
-        height: 120px;
-    }
-    .grid-lower-section{
-        height: 120px;
-    }
-    .location-icon{
-        margin-top: 10%;
-        margin-left: 25%;
-    }
-    .phone-icon{
-        margin-top: 10%;
-        margin-left: 25%;
-    }
-    .mail-icon{
-        margin-top: 10%;
-        margin-left: 25%;
-    }
-    .right-section{
-        height: 480px;
-        width: 550px;
-        left: 230%;
-        top: 25%;
+    .map-box{
+        top: 19%;
+        left: 53%;
+        width: 40%;
+        height: 60%;
     }
 }
