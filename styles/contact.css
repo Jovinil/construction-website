@@ -28,7 +28,7 @@ html{
     scroll-padding-top: 6rem;
 }
 body{
-    width: 320px;
+    width: 360px;
     height: 414px;
     padding: 0;
     margin: 0;
@@ -42,8 +42,8 @@ body{
 .background-image{
     object-fit: cover;
     object-position: center;
-    width: 320px;
-    height: 800px;
+    width: 360px;
+    height: 825px;
 }
 .left-section{
     position: absolute;
@@ -142,8 +142,9 @@ body{
     position: absolute;
     height: 300px;
     width: 335px;
-    bottom: -1;
-    right: 0;
+    top: 340%;
+    bottom: 0%;
+    right: 4%;
 }
 .maps{
     object-fit: cover;
@@ -352,9 +353,9 @@ body{
         position: absolute;
         height: 300px;
         width: 335px;
-        top: 0;
-        right: 0;
-        left: 45px;
+        top: 320%;
+        right: 0%;
+        left: 11%;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -430,8 +431,8 @@ body{
     .right-section{
         height: 550px;
         width: 550px;
-        left: 65%;
-        top: 10%;
+        left: 68%;
+        top: 42%;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -502,7 +503,7 @@ body{
     .right-section{
         height: 400px;
         width: 400px;
-        top: -10%;
+        top: 18%;
         left: 115%;
     }
 }
@@ -571,7 +572,7 @@ body{
     .right-section{
         height: 450px;
         width: 500px;
-        top: -8%;
+        top: 20%;
         left: 135%;
     }
 }
@@ -639,7 +640,7 @@ body{
     .right-section{
         height: 450px;
         width: 500px;
-        top: -11%;
+        top: 18%;
         left: 175%;
     }
     
@@ -682,7 +683,7 @@ body{
         height: 480px;
         width: 550px;
         left: 190%;
-        top: -5%;
+        top: 22%;
        
     }
 }
