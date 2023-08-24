@@ -28,7 +28,7 @@ html{
     scroll-padding-top: 6rem;
 }
 .background-image{
-    background-image: url("/images/contact-background3.jpg");
+    background-image: url("../images/contact-background3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -193,7 +193,7 @@ html{
         height: 38%;
     }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1440px){
+@media only screen and (min-width: 1004px) and (max-width: 1628px){
     .information-grid{
         top: 23%;
         left: 5%;
@@ -243,6 +243,9 @@ html{
         left: 53%;
         width: 40%;
         height: 50%;
+        border-radius: 1px;
+        border-style: solid;
+        border-color: aqua;
     }
 }
 @media only screen and (min-width: 1629px){
@@ -292,7 +295,7 @@ html{
     }
     .map-box{
         top: 19%;
-        left: 53%;
+        left: 55%;
         width: 40%;
         height: 60%;
     }
