@@ -243,9 +243,6 @@ html{
         left: 53%;
         width: 40%;
         height: 50%;
-        border-radius: 1px;
-        border-style: solid;
-        border-color: aqua;
     }
 }
 @media only screen and (min-width: 1629px){
