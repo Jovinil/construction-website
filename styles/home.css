@@ -28,227 +28,96 @@ html{
     scroll-padding-top: 6rem;
 }
 body{
-    height: 667px;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
-.content{
-    z-index: 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
+.main-content{
+        position: relative;
+        background-image: url("../images/bg3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        background-position: right;
 }
-.background-image{
-    object-position: right;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.text-box{
+.text{
     position: absolute;
-    top: 45%;
-    right: 0px;
-    width: 100%;
-    height: 120px;
+    transform: translate(0rem, 30rem);
 }
-.text-box h1{
+.text h1{
     font-size: 1.7rem;
     color: white;
-    padding-bottom: 3px;
-    padding-left: 3px;
     text-shadow: 1px 1px rgb(108, 112, 108);
 }
-.text-box p{
-    font-size: 1.3rem;
-    font-weight: 500;
+.text p{
+    font-size: 1.4rem;
     color: white;
-    padding-left: 5px;
     text-shadow: 1px 1px rgb(108, 112, 108);
 }
-.footer{
-    background-color: var(--heading-color);
-    height: 170px;
-}
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    column-gap: 20px;
-    margin-left: 15px;
-    padding-top: 10px;
-}
-.footer h2{
-    padding-bottom: 2px;
-    font-size: 1.6rem;
-    color: white;
-}
-.footer p{
-    font-size: 1.1rem;
-    color: white;
-    padding-bottom: 3px ;
-}
-.footer a{
-    font-size: 1.1rem;
-    color: white;
-}
-
-@media only screen and (min-width: 768px) {
-    body{
-        height: 768px;
-    }
-    .text-box{
+@media only screen and (min-width: 767.02px) and (max-width: 1022.02px){
+    .text{
         position: absolute;
-        top: 450px;
-        right: 10px;
-        width: 65%;
-        height: 120px;
+        transform: translate(23rem, 38rem);
     }
-    .text-box h1{
+    .text h1{
         font-size: 2.2rem;
     }
-    .text-box p{
-        font-size: 1.8rem;
-    }
-    .footer{
-        height: 200px;
-    }
-    .grid{
-       column-gap: 0px;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-         padding-top: 10px;
-        font-size: 2.0rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.5rem;
-        color: white;
-        padding-bottom: 3px ;
-    }
-    .footer a{
-        font-size: 1.5rem;
-        padding-right: 100px;
-        color: white;
+    .text p{
+        font-size: 1.76rem;
     }
 }
-
-@media only screen and (min-width: 992px) {
-    body{
-        height: 992px;
-        padding: 0;
-        margin: 0;
+@media only screen and (min-width: 1023.02px) and (max-width: 1439.02px){
+    .text{
+        transform: translate(37rem, 38rem);
     }
-    .text-box{
-        top: 500px;
-        width: 60%;
-        height: 120px;
+    .text h1{
+        font-size: 2.8rem;
     }
-    .text-box h1{
-        font-size: 2.5rem;
-    }
-    .text-box p{
-        font-size: 2rem;
-    }
-    .footer{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        height: 210px;
-    }
-    .left-section{
-        padding-left: 20px;
-        width: 90%;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.0rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.7rem;
-    }
-    .footer a{
-        font-size: 1.7rem;
+    .text p{
+        font-size: 2.26rem;
     }
 }
-
-@media only screen and (min-width: 1200px) {
-    body{
-        height: 1200px;
+@media only screen and (min-width: 1439.02px) and (max-width: 1627.02px){
+    .main-content{
+        width: 100%;
+        height: 100vh;
+        background-position: center;
     }
-    .text-box{
-        top: 600px;
-        width: 48%;
-        height: 120px;
+    .text{
+        transform: translate(69rem, 38rem);
     }
-    .footer{
-        height: 190px;
-        padding-top: 0px;
+    .text h1{
+        font-size: 2.8rem;
     }
-    .grid{
-        padding-left: 5%;
-        padding-top: 3%;
-        column-gap: 0px;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.0rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.7rem;
-    }
-    .footer a{
-        font-size: 1.7rem;
+    .text p{
+        font-size: 2.26rem;
     }
 }
-@media only screen and (min-width: 1440px) {
-    body{
-        height: 1000px;
+@media only screen and (min-width: 1628.02px) and (max-width: 2558.02px){
+    .main-content{
+        width: 100%;
+        height: 100vh;
+        background-position: center;
     }
-    .text-box{
-        top: 400px;
-        width: 48%;
-        height: 120px;
-    } 
-    .footer{
-        height: 210px;
-        padding-top: 0px;
+    .text{
+        transform: translate(95rem, 38rem);
     }
-    .grid{
-        padding-left: 5%;
-        padding-top: 1.8%;
-        column-gap: 0px;
+    .text h1{
+        font-size: 2.8rem;
     }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.4rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.9rem;
-    }
-    .footer a{
-        font-size: 1.9rem;
+    .text p{
+        font-size: 2.26rem;
     }
 }
-@media only screen and (min-width: 1629px) {
-    body{
-        height: 1000px;
+@media only screen and (min-width: 2559.02px){
+    .text{
+        transform: translate(131rem, 58rem);
     }
-    .text-box h1{
-        font-size: 3rem;
+    .text h1{
+        font-size: 4.5rem;
     }
-    .text-box p{
-        font-size: 2.3rem;
-    }
-    footer{
-        padding-left: 100px;
-        height: 210px;
-    }
-    .grid{
-        padding-left: 10%;
-        padding-top: 1.8%;
-        column-gap: 0px;
+    .text p{
+        font-size: 3.66rem;
     }
 }
