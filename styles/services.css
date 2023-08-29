@@ -32,362 +32,389 @@ body{
     padding: 0;
     margin: 0;
 }
-
-.content{
-    z-index: 0;
-    position: relative;
-    width: 100%;
-    height: 1100px;
-}
-/*edit here*/
-.heading{
-    padding-top: 5px;
+.heading-div{
     display: flex;
     justify-content: center;
+    margin: 2% 0% 2% 0%;
 }
-.main-content-grid{
-    height: 1050px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.inner-content-grid{
-    height: 90%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 2fr .5fr;
-    border-radius: 10px;
-    border: 10px solid var(--font-color);
-    border: 1px solid black; 
-}
-.services-image{
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    object-fit: cover;
-    width: 100%;
-}
-.content-text-box{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+.content-flex{
     display: flex;
+    gap: 3% 3.9%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: baseline;
+    padding: 5% 2% 2% 2%;
+    height: 118vh;
+}
+.services-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 15rem;
+    width: 14rem;
+    border-radius: 10px;
+    padding: 2% 2% 2% 2%;
+    border: 1px solid rgb(121, 121, 121); 
+}
+.inner-images{
+    margin: 1%;
+}
+.service-name-div{
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
-/*end of edit*/
-.footer{
-    bottom: 0;
-    background-color: var(--heading-color);
-    height: 155px;
+.service-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
-.grid{
-    padding-top: 1%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    column-gap: 15px;
-    margin-left: 10px;
+.service-name{
+    font-size: 1.24rem;
+    font-weight: 700;
 }
-.footer h2{
-    padding-bottom: 2px;
-    font-size: 1.6rem;
-    color: white;
+#drain-rebar-p{
+    padding: 0% 0% 0% 15%;
 }
-.footer p{
-    font-size: 1.1rem;
-    color: white;
-    padding-bottom: 3px ;
+#metal-tiles-p{
+    padding: 0% 0% 0% 15%;
 }
-.footer a{
-    font-size: 1.1rem;
-    color: white;
+@media only screen and (max-height: 764.02px){
+    .content-flex{
+        display: flex;
+        gap: 3% 3.9%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 5% 2% 600px 2%;
+        height: 118vh;
+    }
 }
-
-@media only screen and (min-width: 768px) {
-    /*edit here*/
-    .heading{
-        padding-top: 10px;
+@media only screen and (max-height: 670.02px){
+    .content-flex{
+        display: flex;
+        gap: 3% 3.9%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 5% 2% 800px 2%;
+        height: 118vh;
+    }
+}
+@media only screen and (min-width:374.02px) and (max-width: 766.02px){
+    .content-flex{
+        display: flex;
+        gap: 2% 3.9%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 5% 2% 2% 2%;
+        height: 135vh;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto;
+        height: 18rem;
+        width: 17rem;
+        border-radius: 10px;
+        padding: 2% 2% 2% 2%;
+        border: 1px solid rgb(121, 121, 121); 
+    }
+    .service-name-div{
         display: flex;
         justify-content: center;
-    }
-    .heading h2{
-        font-size: 2.5rem;
-    }
-    .main-content-grid{
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 10px;
-    }
-    .main-content-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .inner-content-grid{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-rows: .5fr 50px;
-    }
-    .content-text-box{
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-    }
-    .services-text{
-        font-size: 1.7rem;
-    }
-    .bottom-services-text-1{
-        font-size: 1.7rem;
-        padding-left: 20%;
-    }
-    .bottom-services-text-2{
-        font-size: 1.7rem;
-        padding-left: 20%;
-    }
-    /*end of edit*/
-    .footer{
-        padding-left: 10px;
-        height: 190px;
-    }
-    .grid{
-        padding-left: 0.5%;
-        padding-top: 2.5%;
-        column-gap: 0px;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.0rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.5rem;
-        color: white;
-        padding-bottom: 3px ;
-    }
-    .footer a{
-        font-size: 1.4rem;
-        padding-right: 100px;
-        color: white;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    /*edit here*/
-    .content{
-        height: 1280px;
-    }
-    .heading{
-        padding-top: 10px;
-    }
-    .heading h2{
-        font-size: 2.8rem;
-    }
-    .main-content-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .inner-content-grid{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-rows: .5fr 50px;
-    }
-    .services-image{
-        object-fit: cover;
-        width: 100%;
-    }
-    .bottom-services-text{
-        margin-left: 0;
-    }
-    .services-text{
-        font-size: 1.9rem;
-    }
-    .bottom-services-text-1{
-        font-size: 1.7rem;
-        padding-left: 2%;
-    }
-    .bottom-services-text-2{
-        font-size: 1.7rem;
-        padding-left: 0%;
-    }
-    /*end*/
-    .footer{
-        padding-left: 15px;
-        height: 215px;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.0rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.7rem;
-    }
-    .footer a{
-        font-size: 1.7rem;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    body{
-        height: 1200px;
-    }
-    /*edit here*/
-    .content{
-        height: 940px;
-    }
-    .heading{
-        padding-top: 10px;
-    }
-    .heading h2{
-        font-size: 2.8rem;
-    }
-    .main-content-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .inner-content-grid{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-rows: .5fr 60px;
-    }
-    .services-image{
-        object-fit: cover;
-        width: 100%;
-    }
-    .content-text-box{
-        grid-template-rows: .5fr;
-    }
-    .services-text{
-        font-size: 2rem;
-    }
-    .bottom-services-text{
-        margin-left: 20%;
-        font-size: 2rem;
-    }
-    .bottom-services-text-1{
-        font-size: 2rem;
-        padding-left: 22%;
-    }
-    .bottom-services-text-2{
-        font-size: 2rem;
-        padding-left: 20%;
-    }
-    /*end*/
-    .footer{
-        padding-left: 10px;
-        height: 210px;
-    }
-    .grid{
-        padding-left: 5%;
-        padding-top: 3%;
-        column-gap: 0px;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.3rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.8rem;
-    }
-    .footer a{
-        font-size: 1.74rem;
-    }
-}
-@media only screen and (min-width: 1440px) {
-    body{
-        height: 1000px;
-    } 
-    /*start*/
-    .content{
-        height: 1100px;
-    }
-    .bottom-services-text-1{
-        font-size: 2rem;
-        padding-left: 3%;
-    }
-    .bottom-services-text-2{
-        font-size: 2rem;
-        padding-left: 20%;
-    }
-    .footer{
-        padding-left: 10px;
-        height: 205px;
-    }
-    .grid{
-        padding-left: 5%;
-        padding-top: 2%;
-        column-gap: 0px;
-    }
-    .footer h2{
-        padding-bottom: 2px;
-        font-size: 2.5rem;
-        color: white;
-    }
-    .footer p{
-        font-size: 1.9rem;
-    }
-    .footer a{
-        font-size: 1.9rem;
-    }
-}
-@media only screen and (min-width: 1629px) {
-    body{
-        height: 1000px;
-    }
-    /*start*/
-    .content{
-        height: 1050px;
-    }
-    .heading{
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    .heading h2{
-        font-size: 2.8rem;
-    }
-    .main-content-grid{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .inner-content-grid{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-rows: .5fr 70px;
-    }
-    .content-text-box{
-        width: auto;
-        height: 80px;
-    }
-    .services-text{
-        font-size: 1.8rem;
-    }
-    .bottom-services-text{
-        margin-left: 0%;
         align-items: center;
-        font-size: 1.8rem;
+        align-content: center;
     }
-    /*end*/
-    .footer{
-        padding-top: 15px;
-        padding-left: 30px;
-        height: 210px;
+    .service-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
     }
-    .grid{
-        padding-left: 10%;
-        padding-top: 1%;
-        column-gap: 0px;
+    .service-name{
+        font-size: 1.34rem;
+        font-weight: 700;
+    }
+    #drain-rebar-p{
+        padding: 0% 0% 0% 18%;
+    }
+    #metal-tiles-p{
+        padding: 0% 0% 0% 15%;
+    }
+    @media only screen and (max-height: 764.02px){
+        .content-flex{
+            display: flex;
+            gap: 3% 3.9%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: baseline;
+            padding: 5% 2% 1000px 2%;
+            height: 118vh;
+        }
+    }
+    @media only screen and (max-height: 670.02px){
+        .content-flex{
+            display: flex;
+            gap: 3% 3.9%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: baseline;
+            padding: 5% 2% 1000px 2%;
+            height: 118vh;
+        }
+    }
+}
+@media only screen and (min-width:767.02px) and (max-width: 1022.02px){
+    .heading-div{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0% 0% 0%;
+        font-size: 1.2rem;
+    }
+    .content-flex{
+        display: flex;
+        gap: 2% 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 5% 2% 2% 2%;
+        height: 135vh;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto;
+        height: 22rem;
+        width: 23rem;
+        border-radius: 10px;
+        padding: 5% 1% 5% 1%;
+        border: 1px solid rgb(121, 121, 121); 
+    }
+    .service-name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .service-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .service-name{
+        font-size: 1.54rem;
+        font-weight: 700;
+    }
+    #drain-rebar-p{
+        padding: 0% 0% 0% 0%;
+    }
+    #metal-tiles-p{
+        padding: 0% 0% 0% 20%;
+    }
+}
+@media only screen and (min-width:1023.02px) and (max-width: 1438.02px){
+    .heading-div{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0% 0% 0%;
+        font-size: 1.4rem;
+    }
+    .content-flex{
+        display: flex;
+        gap: 2% 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 3% 2% 2% 2%;
+        height: 100vh;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto;
+        height: 22rem;
+        width: 23rem;
+        border-radius: 10px;
+        padding: 5% 1% 5% 1%;
+        border: 1px solid rgb(121, 121, 121); 
+    }
+    .service-name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .service-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .service-name{
+        font-size: 1.64rem;
+        font-weight: 700;
+    }
+    #drain-rebar-p{
+        padding: 0% 0% 0% 22%;
+    }
+    #metal-tiles-p{
+        padding: 0% 0% 0% 20%;
+    }
+}
+@media only screen and (min-width: 1439.02px) and (max-width: 1627.02px){
+    .heading-div{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0% 0% 0%;
+        font-size: 1.4rem;
+    }
+    .content-flex{
+        display: flex;
+        gap: 5% 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 2% 2% 2% 2%;
+        height: 90vh;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto;
+        height: 25rem;
+        width: 25rem;
+        border-radius: 10px;
+        padding: 4% 1% 4% 1%;
+        border: 1px solid rgb(121, 121, 121); 
+    }
+    .service-name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .service-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .service-name{
+        font-size: 1.74rem;
+        font-weight: 700;
+    }
+    #drain-rebar-p{
+        padding: 0% 0% 0% 0%;
+    }
+    #metal-tiles-p{
+        padding: 0% 0% 0% 20%;
+    }
+}
+@media only screen and (min-width: 1628.02px) and (max-width: 2558.02px){
+    .heading-div{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0% 0% 0%;
+        font-size: 1.4rem;
+    }
+    .content-flex{
+        display: flex;
+        gap: 5% 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 2% 2% 2% 2%;
+        height: 90vh;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto;
+        height: 28rem;
+        width: 30rem;
+        border-radius: 10px;
+        padding: 4% 1% 4% 1%;
+        border: 1px solid rgb(121, 121, 121); 
+    }
+    .service-name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .service-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .service-name{
+        font-size: 1.74rem;
+        font-weight: 700;
+    }
+    #drain-rebar-p{
+        padding: 0% 0% 0% 0%;
+    }
+    #metal-tiles-p{
+        padding: 0% 0% 0% 20%;
+    }
+}
+@media only screen and (min-width: 2559.02px){
+    .heading-div{
+        display: flex;
+        justify-content: center;
+        margin: 3% 0% 0% 0%;
+        font-size: 2.4rem;
+    }
+    .content-flex{
+        display: flex;
+        gap: 5% 2%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: baseline;
+        padding: 2% 2% 2% 2%;
+        height: 90vh;
+    }
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 1 auto;
+        height: 45rem;
+        width: 45rem;
+        border-radius: 20px;
+        padding: 4% 1% 4% 1%;
+        border: 1px solid rgb(121, 121, 121); 
+    }
+    .service-name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .service-image{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .service-name{
+        font-size: 2.85rem;
+        font-weight: 700;
+    }
+    #drain-rebar-p{
+        padding: 0% 0% 0% 0%;
+    }
+    #metal-tiles-p{
+        padding: 0% 0% 0% 22%;
     }
 }
