@@ -59,7 +59,16 @@ body{
     font-size: 1.25rem;
     font-weight: 500;
 }
-@media only screen and (max-height: 700.02px){
+@media only screen and (max-height: 764.02px){
+    .main-content{
+        background-image: url(../images/building-background3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 10% 0% 700px 0%;
+        width: 100vw;
+        height: 100vh;
+    }
     .text h1{
         color: white;
         font-size: 1.4rem;
