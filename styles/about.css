@@ -45,6 +45,8 @@ body{
     display: none;
 }
 .text{
+    display: flex;
+    flex-direction: column;
     margin: 3% 3% 3% 3%;
     padding-bottom: 10%;
 }
@@ -57,6 +59,17 @@ body{
     font-size: 1.25rem;
     font-weight: 500;
 }
+@media only screen and (max-height: 700.02px){
+    .text h1{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .text p{
+        color: white;
+        font-size: 1.17rem;
+        font-weight: 500;
+    }
+}
 @media only screen and (min-width: 374.02px) and (max-width: 766.02px){
     .text h1{
         color: white;
@@ -66,6 +79,17 @@ body{
         color: white;
         font-size: 1.36rem;
         font-weight: 500;
+    }
+    @media only screen and (max-height: 700.02px){
+        .text h1{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .text p{
+            color: white;
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
     }
 }
 @media only screen and (min-width: 767.02px) and (max-width: 1022.02px){
