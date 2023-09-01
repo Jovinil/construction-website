@@ -121,6 +121,12 @@ html{
     width: 100%;
     height: 100%;
 }
+@media only screen and (max-height: 754.02px){
+    .content{
+        position: relative;
+        height: 650px;
+    }
+}
 @media only screen and (min-width: 375px) and (max-width: 425px){
     .information-grid{
         top: 2%;
@@ -152,7 +158,7 @@ html{
         height: 40%;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px){
+@media only screen and (min-width: 768px) and (max-width: 1022.02px){
     .information-grid{
         top: 20%;
         left: 4%;
@@ -192,8 +198,14 @@ html{
         width: 40%;
         height: 38%;
     }
+    @media only screen and (max-height: 754.02px){
+        .content{
+            position: relative;
+            height: 650px;
+        }
+    }
 }
-@media only screen and (min-width: 1004px) and (max-width: 1628px){
+@media only screen and (min-width: 1023.02px) and (max-width: 1628px){
     .information-grid{
         top: 23%;
         left: 5%;
@@ -244,13 +256,17 @@ html{
         width: 40%;
         height: 50%;
     }
-    @media only screen and (max-height: 600.02px){
+    @media only screen and (max-height: 750.02px){
+        .content{
+            position: relative;
+            height: 700px;
+        }
         .map-box{
             top: 23%;
-            left: 58%;
-            width: 32%;
+            left: 55%;
+            width: 38%;
             height: 50%;
-        }
+        } 
     }
 }
 @media only screen and (min-width: 1629px){
@@ -303,5 +319,24 @@ html{
         left: 55%;
         width: 40%;
         height: 60%;
+    }
+    @media only screen and (max-height: 750.02px){
+        .background-image{
+            background-image: url("../images/contact-background3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 110vh;
+        }
+        .content{
+            position: relative;
+            height: 800px;
+        }
+        .map-box{
+            top: 23%;
+            left: 55%;
+            width: 38%;
+            height: 50%;
+        } 
     }
 }
