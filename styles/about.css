@@ -189,6 +189,7 @@ body{
         align-items: center;
         gap: 1.5em;
         height: 770px;
+        border: 1px solid aqua;
     }
     .image-grid{
         display: flex;
@@ -224,6 +225,17 @@ body{
     .text p{
         color: white;
         font-size: 1.77rem;
+    }
+    @media only screen and (max-height: 764.02px){
+        .main-content{
+            background-image: url(../images/building-background3.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 0% 0% 0% 0%;
+            width: 100vw;
+            height: 800px;
+        }
     }
 }
 /*edit the 2560px screen*/
