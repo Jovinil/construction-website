@@ -55,6 +55,21 @@ body{
     color: white;
     text-shadow: 1px 1px rgb(108, 112, 108);
 }
+@media only screen and (max-height: 754.02px){
+    .main-content{
+        position: relative;
+        background-image: url("../images/bg3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        background-position: right;
+    }
+    .text{
+        position: absolute;
+        transform: translate(0rem, 20rem);
+    }
+}
 @media only screen and (min-width: 767.02px) and (max-width: 1022.02px){
     .text{
         position: absolute;
@@ -119,5 +134,20 @@ body{
     }
     .text p{
         font-size: 3.66rem;
+    }
+    @media only screen and (max-height: 754.02px){
+        .main-content{
+            position: relative;
+            background-image: url("../images/bg3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 800px;
+            background-position: right;
+        }
+        .text{
+            position: absolute;
+            transform: translate(110rem, 50rem);
+        }
     }
 }

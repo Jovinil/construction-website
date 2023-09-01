@@ -217,6 +217,11 @@ body{
     #metal-tiles-p{
         padding: 0% 0% 0% 20%;
     }
+    @media only screen and (max-height: 754.02px){
+        .content-flex{
+            height: 1050px;
+        }
+    }
 }
 @media only screen and (min-width:1023.02px) and (max-width: 1438.02px){
     .heading-div{
@@ -266,6 +271,11 @@ body{
     }
     #metal-tiles-p{
         padding: 0% 0% 0% 20%;
+    }
+    @media only screen and (max-height: 754.02px){
+        .content-flex{
+            height: 800px
+        }
     }
 }
 @media only screen and (min-width: 1439.02px) and (max-width: 1627.02px){
@@ -317,6 +327,11 @@ body{
     #metal-tiles-p{
         padding: 0% 0% 0% 20%;
     }
+    @media only screen and (max-height: 754.02px){
+        .content-flex{
+            height: 700px
+        }
+    }
 }
 @media only screen and (min-width: 1628.02px) and (max-width: 2558.02px){
     .heading-div{
@@ -340,8 +355,8 @@ body{
         justify-content: center;
         align-items: center;
         flex: 0 1 auto;
-        height: 28rem;
-        width: 30rem;
+        height: 26rem;
+        width: 28rem;
         border-radius: 10px;
         padding: 4% 1% 4% 1%;
         border: 1px solid rgb(121, 121, 121); 
@@ -366,6 +381,11 @@ body{
     }
     #metal-tiles-p{
         padding: 0% 0% 0% 20%;
+    }
+    @media only screen and (max-height: 754.02px){
+        .content-flex{
+            height: 700px
+        }
     }
 }
 @media only screen and (min-width: 2559.02px){
@@ -416,5 +436,10 @@ body{
     }
     #metal-tiles-p{
         padding: 0% 0% 0% 22%;
+    }
+    @media only screen and (max-height: 754.02px){
+        .content-flex{
+            height: 1100px
+        }
     }
 }
