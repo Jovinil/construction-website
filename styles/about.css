@@ -189,7 +189,6 @@ body{
         align-items: center;
         gap: 1.5em;
         height: 770px;
-        border: 1px solid aqua;
     }
     .image-grid{
         display: flex;
